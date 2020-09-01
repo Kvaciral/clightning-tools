@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from lightning import LightningRpc
 import sys, os
-import curses
 
 class TermColors:
     '''
@@ -45,7 +44,6 @@ for peer in peers['peers']:
             print(peer['connected'], "........", peer["id"], node.listnodes(peer["id"])['nodes'][0]['alias'])
         else:
             print(peer['connected'], "........", peer["id"], "<NOT FOUND>")
-
 
 if __name__ == '__main__':
     pass
